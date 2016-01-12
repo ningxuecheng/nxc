@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49ACCF631C2CD3FA00CF4120 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ACCF621C2CD3FA00CF4120 /* main.m */; };
+		49ACCF661C2CD3FA00CF4120 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ACCF651C2CD3FA00CF4120 /* AppDelegate.m */; };
+		49ACCF691C2CD3FA00CF4120 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ACCF681C2CD3FA00CF4120 /* ViewController.m */; };
+		49ACCF6C1C2CD3FA00CF4120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49ACCF6A1C2CD3FA00CF4120 /* Main.storyboard */; };
+		49ACCF6E1C2CD3FA00CF4120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49ACCF6D1C2CD3FA00CF4120 /* Assets.xcassets */; };
+		49ACCF711C2CD3FA00CF4120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49ACCF6F1C2CD3FA00CF4120 /* LaunchScreen.storyboard */; };
+		49ACCF7C1C2CD3FA00CF4120 /* UI11_UITableView___cell________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ACCF7B1C2CD3FA00CF4120 /* UI11_UITableView___cell________Tests.m */; };
+		49ACCF871C2CD3FA00CF4120 /* UI11_UITableView___cell________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ACCF861C2CD3FA00CF4120 /* UI11_UITableView___cell________UITests.m */; };
+		49ACCF961C2D16EB00CF4120 /* SecondTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ACCF951C2D16EB00CF4120 /* SecondTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49ACCF781C2CD3FA00CF4120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49ACCF561C2CD3FA00CF4120 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49ACCF5D1C2CD3FA00CF4120;
+			remoteInfo = "UI11_UITableView编辑（cell的删除插入移动）";
+		};
+		49ACCF831C2CD3FA00CF4120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49ACCF561C2CD3FA00CF4120 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49ACCF5D1C2CD3FA00CF4120;
+			remoteInfo = "UI11_UITableView编辑（cell的删除插入移动）";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49ACCF5E1C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI11_UITableView编辑（cell的删除插入移动）.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49ACCF621C2CD3FA00CF4120 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49ACCF641C2CD3FA00CF4120 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49ACCF651C2CD3FA00CF4120 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		49ACCF671C2CD3FA00CF4120 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		49ACCF681C2CD3FA00CF4120 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		49ACCF6B1C2CD3FA00CF4120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49ACCF6D1C2CD3FA00CF4120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49ACCF701C2CD3FA00CF4120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49ACCF721C2CD3FA00CF4120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49ACCF771C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI11_UITableView编辑（cell的删除插入移动）Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49ACCF7B1C2CD3FA00CF4120 /* UI11_UITableView___cell________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UI11_UITableView___cell________Tests.m"; sourceTree = "<group>"; };
+		49ACCF7D1C2CD3FA00CF4120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49ACCF821C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI11_UITableView编辑（cell的删除插入移动）UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49ACCF861C2CD3FA00CF4120 /* UI11_UITableView___cell________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UI11_UITableView___cell________UITests.m"; sourceTree = "<group>"; };
+		49ACCF881C2CD3FA00CF4120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49ACCF941C2D16EB00CF4120 /* SecondTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTableViewController.h; sourceTree = "<group>"; };
+		49ACCF951C2D16EB00CF4120 /* SecondTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49ACCF5B1C2CD3FA00CF4120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49ACCF741C2CD3FA00CF4120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49ACCF7F1C2CD3FA00CF4120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49ACCF551C2CD3FA00CF4120 = {
+			isa = PBXGroup;
+			children = (
+				49ACCF601C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动） */,
+				49ACCF7A1C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）Tests */,
+				49ACCF851C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）UITests */,
+				49ACCF5F1C2CD3FA00CF4120 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49ACCF5F1C2CD3FA00CF4120 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49ACCF5E1C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）.app */,
+				49ACCF771C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）Tests.xctest */,
+				49ACCF821C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49ACCF601C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动） */ = {
+			isa = PBXGroup;
+			children = (
+				49ACCF641C2CD3FA00CF4120 /* AppDelegate.h */,
+				49ACCF651C2CD3FA00CF4120 /* AppDelegate.m */,
+				49ACCF671C2CD3FA00CF4120 /* ViewController.h */,
+				49ACCF681C2CD3FA00CF4120 /* ViewController.m */,
+				49ACCF941C2D16EB00CF4120 /* SecondTableViewController.h */,
+				49ACCF951C2D16EB00CF4120 /* SecondTableViewController.m */,
+				49ACCF6A1C2CD3FA00CF4120 /* Main.storyboard */,
+				49ACCF6D1C2CD3FA00CF4120 /* Assets.xcassets */,
+				49ACCF6F1C2CD3FA00CF4120 /* LaunchScreen.storyboard */,
+				49ACCF721C2CD3FA00CF4120 /* Info.plist */,
+				49ACCF611C2CD3FA00CF4120 /* Supporting Files */,
+			);
+			path = "UI11_UITableView编辑（cell的删除插入移动）";
+			sourceTree = "<group>";
+		};
+		49ACCF611C2CD3FA00CF4120 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49ACCF621C2CD3FA00CF4120 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49ACCF7A1C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）Tests */ = {
+			isa = PBXGroup;
+			children = (
+				49ACCF7B1C2CD3FA00CF4120 /* UI11_UITableView___cell________Tests.m */,
+				49ACCF7D1C2CD3FA00CF4120 /* Info.plist */,
+			);
+			path = "UI11_UITableView编辑（cell的删除插入移动）Tests";
+			sourceTree = "<group>";
+		};
+		49ACCF851C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）UITests */ = {
+			isa = PBXGroup;
+			children = (
+				49ACCF861C2CD3FA00CF4120 /* UI11_UITableView___cell________UITests.m */,
+				49ACCF881C2CD3FA00CF4120 /* Info.plist */,
+			);
+			path = "UI11_UITableView编辑（cell的删除插入移动）UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49ACCF5D1C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动） */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49ACCF8B1C2CD3FA00CF4120 /* Build configuration list for PBXNativeTarget "UI11_UITableView编辑（cell的删除插入移动）" */;
+			buildPhases = (
+				49ACCF5A1C2CD3FA00CF4120 /* Sources */,
+				49ACCF5B1C2CD3FA00CF4120 /* Frameworks */,
+				49ACCF5C1C2CD3FA00CF4120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UI11_UITableView编辑（cell的删除插入移动）";
+			productName = "UI11_UITableView编辑（cell的删除插入移动）";
+			productReference = 49ACCF5E1C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49ACCF761C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49ACCF8E1C2CD3FA00CF4120 /* Build configuration list for PBXNativeTarget "UI11_UITableView编辑（cell的删除插入移动）Tests" */;
+			buildPhases = (
+				49ACCF731C2CD3FA00CF4120 /* Sources */,
+				49ACCF741C2CD3FA00CF4120 /* Frameworks */,
+				49ACCF751C2CD3FA00CF4120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49ACCF791C2CD3FA00CF4120 /* PBXTargetDependency */,
+			);
+			name = "UI11_UITableView编辑（cell的删除插入移动）Tests";
+			productName = "UI11_UITableView编辑（cell的删除插入移动）Tests";
+			productReference = 49ACCF771C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49ACCF811C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49ACCF911C2CD3FA00CF4120 /* Build configuration list for PBXNativeTarget "UI11_UITableView编辑（cell的删除插入移动）UITests" */;
+			buildPhases = (
+				49ACCF7E1C2CD3FA00CF4120 /* Sources */,
+				49ACCF7F1C2CD3FA00CF4120 /* Frameworks */,
+				49ACCF801C2CD3FA00CF4120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49ACCF841C2CD3FA00CF4120 /* PBXTargetDependency */,
+			);
+			name = "UI11_UITableView编辑（cell的删除插入移动）UITests";
+			productName = "UI11_UITableView编辑（cell的删除插入移动）UITests";
+			productReference = 49ACCF821C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49ACCF561C2CD3FA00CF4120 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = dllo;
+				TargetAttributes = {
+					49ACCF5D1C2CD3FA00CF4120 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					49ACCF761C2CD3FA00CF4120 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 49ACCF5D1C2CD3FA00CF4120;
+					};
+					49ACCF811C2CD3FA00CF4120 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 49ACCF5D1C2CD3FA00CF4120;
+					};
+				};
+			};
+			buildConfigurationList = 49ACCF591C2CD3FA00CF4120 /* Build configuration list for PBXProject "UI11_UITableView编辑（cell的删除插入移动）" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49ACCF551C2CD3FA00CF4120;
+			productRefGroup = 49ACCF5F1C2CD3FA00CF4120 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49ACCF5D1C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动） */,
+				49ACCF761C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）Tests */,
+				49ACCF811C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动）UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49ACCF5C1C2CD3FA00CF4120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49ACCF711C2CD3FA00CF4120 /* LaunchScreen.storyboard in Resources */,
+				49ACCF6E1C2CD3FA00CF4120 /* Assets.xcassets in Resources */,
+				49ACCF6C1C2CD3FA00CF4120 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49ACCF751C2CD3FA00CF4120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49ACCF801C2CD3FA00CF4120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49ACCF5A1C2CD3FA00CF4120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49ACCF691C2CD3FA00CF4120 /* ViewController.m in Sources */,
+				49ACCF961C2D16EB00CF4120 /* SecondTableViewController.m in Sources */,
+				49ACCF661C2CD3FA00CF4120 /* AppDelegate.m in Sources */,
+				49ACCF631C2CD3FA00CF4120 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49ACCF731C2CD3FA00CF4120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49ACCF7C1C2CD3FA00CF4120 /* UI11_UITableView___cell________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49ACCF7E1C2CD3FA00CF4120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49ACCF871C2CD3FA00CF4120 /* UI11_UITableView___cell________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49ACCF791C2CD3FA00CF4120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49ACCF5D1C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动） */;
+			targetProxy = 49ACCF781C2CD3FA00CF4120 /* PBXContainerItemProxy */;
+		};
+		49ACCF841C2CD3FA00CF4120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49ACCF5D1C2CD3FA00CF4120 /* UI11_UITableView编辑（cell的删除插入移动） */;
+			targetProxy = 49ACCF831C2CD3FA00CF4120 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49ACCF6A1C2CD3FA00CF4120 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49ACCF6B1C2CD3FA00CF4120 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49ACCF6F1C2CD3FA00CF4120 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49ACCF701C2CD3FA00CF4120 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49ACCF891C2CD3FA00CF4120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		49ACCF8A1C2CD3FA00CF4120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49ACCF8C1C2CD3FA00CF4120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "UI11_UITableView编辑（cell的删除插入移动）/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou3g.UI11-UITableView---cell--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49ACCF8D1C2CD3FA00CF4120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "UI11_UITableView编辑（cell的删除插入移动）/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou3g.UI11-UITableView---cell--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		49ACCF8F1C2CD3FA00CF4120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "UI11_UITableView编辑（cell的删除插入移动）Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou3g.UI11-UITableView---cell--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UI11_UITableView编辑（cell的删除插入移动）.app/UI11_UITableView编辑（cell的删除插入移动）";
+			};
+			name = Debug;
+		};
+		49ACCF901C2CD3FA00CF4120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "UI11_UITableView编辑（cell的删除插入移动）Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou3g.UI11-UITableView---cell--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UI11_UITableView编辑（cell的删除插入移动）.app/UI11_UITableView编辑（cell的删除插入移动）";
+			};
+			name = Release;
+		};
+		49ACCF921C2CD3FA00CF4120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "UI11_UITableView编辑（cell的删除插入移动）UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou3g.UI11-UITableView---cell--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "UI11_UITableView编辑（cell的删除插入移动）";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		49ACCF931C2CD3FA00CF4120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "UI11_UITableView编辑（cell的删除插入移动）UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou3g.UI11-UITableView---cell--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "UI11_UITableView编辑（cell的删除插入移动）";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49ACCF591C2CD3FA00CF4120 /* Build configuration list for PBXProject "UI11_UITableView编辑（cell的删除插入移动）" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49ACCF891C2CD3FA00CF4120 /* Debug */,
+				49ACCF8A1C2CD3FA00CF4120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49ACCF8B1C2CD3FA00CF4120 /* Build configuration list for PBXNativeTarget "UI11_UITableView编辑（cell的删除插入移动）" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49ACCF8C1C2CD3FA00CF4120 /* Debug */,
+				49ACCF8D1C2CD3FA00CF4120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49ACCF8E1C2CD3FA00CF4120 /* Build configuration list for PBXNativeTarget "UI11_UITableView编辑（cell的删除插入移动）Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49ACCF8F1C2CD3FA00CF4120 /* Debug */,
+				49ACCF901C2CD3FA00CF4120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49ACCF911C2CD3FA00CF4120 /* Build configuration list for PBXNativeTarget "UI11_UITableView编辑（cell的删除插入移动）UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49ACCF921C2CD3FA00CF4120 /* Debug */,
+				49ACCF931C2CD3FA00CF4120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49ACCF561C2CD3FA00CF4120 /* Project object */;
+}

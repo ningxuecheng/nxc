@@ -1,0 +1,33 @@
+
+<students>
+
+   <student>
+   <name>Zhangsan</name>
+   <age>18</age>
+   <sex>male</sex>
+   <number>1</number>
+   </student>
+   
+
+   <student>
+       <name>Lisi</name>
+       <age>20</age>
+       <sex>female</sex>
+       <number>2</number>
+       
+   </student>
+<!-- 子节点  -->
+   <student>
+       <name>Wangwu</name>
+       <age>22</age>
+       <sex>female</sex>
+       <number>3</number>
+       
+   </student>
+
+
+
+
+
+
+</students>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HG5-RF-gbH">
+                                <rect key="frame" x="90" y="15" width="181" height="43"/>
+                                <animations/>
+                                <state key="normal" title="获取APP包文件夹路径"/>
+                                <connections>
+                                    <action selector="findAPPPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oTK-zY-GfN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrA-kf-UBq">
+                                <rect key="frame" x="52" y="59" width="245" height="54"/>
+                                <animations/>
+                                <state key="normal" title="--------------沙盒部分-------------"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWd-xa-xWH">
+                                <rect key="frame" x="105" y="110" width="163" height="43"/>
+                                <animations/>
+                                <state key="normal" title="获取沙盒路径"/>
+                                <connections>
+                                    <action selector="findSandBoxPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzc-gy-655"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkS-bx-Pbc">
+                                <rect key="frame" x="112" y="154" width="150" height="39"/>
+                                <animations/>
+                                <state key="normal" title="获取沙盒各文件夹路径"/>
+                                <connections>
+                                    <action selector="findPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0zI-qy-cVU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBH-ky-URd">
+                                <rect key="frame" x="45" y="195" width="275" height="34"/>
+                                <animations/>
+                                <state key="normal" title="--------------简单对象读写-------------"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXW-Lb-dzh">
+                                <rect key="frame" x="17" y="237" width="146" height="33"/>
+                                <animations/>
+                                <state key="normal" title="简单对象写入"/>
+                                <connections>
+                                    <action selector="handleNSStringWriteToDisk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZlN-Rv-Cul"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oR9-KS-FrW">
+                                <rect key="frame" x="166" y="239" width="137" height="30"/>
+                                <animations/>
+                                <state key="normal" title="从本地读取NSString"/>
+                                <connections>
+                                    <action selector="handleReadFromdisk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nww-Oz-BgK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baN-9H-26h">
+                                <rect key="frame" x="40" y="269" width="101" height="35"/>
+                                <animations/>
+                                <state key="normal" title="Array写入"/>
+                                <connections>
+                                    <action selector="handleNSArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Owk-g0-9hg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDM-PI-RY7">
+                                <rect key="frame" x="162" y="271" width="144" height="36"/>
+                                <animations/>
+                                <state key="normal" title="Array读取"/>
+                                <connections>
+                                    <action selector="handleReadNSArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iR4-DG-g1O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLE-Bg-HAm">
+                                <rect key="frame" x="50" y="319" width="85" height="30"/>
+                                <animations/>
+                                <state key="normal" title="NSData写入"/>
+                                <connections>
+                                    <action selector="handleWriteNSData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gci-YV-oGZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23q-dp-JOa">
+                                <rect key="frame" x="184" y="315" width="100" height="34"/>
+                                <animations/>
+                                <state key="normal" title="NSData读取"/>
+                                <connections>
+                                    <action selector="handleReadNSData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xpA-2U-p3v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K3-vS-Y5d">
+                                <rect key="frame" x="56" y="357" width="73" height="30"/>
+                                <animations/>
+                                <state key="normal" title="NSDic写入"/>
+                                <connections>
+                                    <action selector="handleWriteDic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tqH-Eb-qsi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WU-gI-eVl">
+                                <rect key="frame" x="198" y="357" width="73" height="21"/>
+                                <animations/>
+                                <state key="normal" title="NSDic读取"/>
+                                <connections>
+                                    <action selector="handleReadDic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YFv-ta-WN2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1og-h5-6ck">
+                                <rect key="frame" x="28" y="386" width="275" height="34"/>
+                                <animations/>
+                                <state key="normal" title="--------------复杂对象读写-------------"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWu-AY-g9k">
+                                <rect key="frame" x="207" y="418" width="90" height="30"/>
+                                <animations/>
+                                <state key="normal" title="复杂对象读取"/>
+                                <connections>
+                                    <action selector="handleModelRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LpI-BS-usx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qH-vR-6yu">
+                                <rect key="frame" x="40" y="418" width="90" height="30"/>
+                                <animations/>
+                                <state key="normal" title="复杂对象写入"/>
+                                <connections>
+                                    <action selector="handleModelWrite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQo-am-9sF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSt-E5-dyt">
+                                <rect key="frame" x="28" y="467" width="289" height="34"/>
+                                <animations/>
+                                <state key="normal" title="--------------NSFileManager-------------"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sr-LQ-qaj">
+                                <rect key="frame" x="20" y="499" width="84" height="30"/>
+                                <animations/>
+                                <state key="normal" title="FileManager"/>
+                                <connections>
+                                    <action selector="hanleFileManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yvX-r7-nbU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="---------NSFileHandle---------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAs-uC-zlD">
+                                <rect key="frame" x="45" y="537" width="241" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7i-eB-896">
+                                <rect key="frame" x="20" y="582" width="69" height="30"/>
+                                <animations/>
+                                <state key="normal" title="fileHandle"/>
+                                <connections>
+                                    <action selector="fileHandle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VI5-DY-Zqj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="429.5"/>
+        </scene>
+    </scenes>
+</document>
