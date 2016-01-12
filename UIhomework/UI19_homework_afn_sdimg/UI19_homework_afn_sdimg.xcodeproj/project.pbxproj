@@ -55,6 +55,8 @@
 		49EBBB531C40EF5800576D7F /* MarkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBB521C40EF5800576D7F /* MarkVC.m */; };
 		49EBBB571C410CDE00576D7F /* CellOfHeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBB551C410CDE00576D7F /* CellOfHeed.m */; };
 		49EBBB581C410CDE00576D7F /* CellOfHeed.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EBBB561C410CDE00576D7F /* CellOfHeed.xib */; };
+		49F142711C4528AF009D9727 /* DataBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F142701C4528AF009D9727 /* DataBaseHandler.m */; };
+		49F142741C4529D7009D9727 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F142731C4529D7009D9727 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +164,9 @@
 		49EBBB541C410CDE00576D7F /* CellOfHeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellOfHeed.h; sourceTree = "<group>"; };
 		49EBBB551C410CDE00576D7F /* CellOfHeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellOfHeed.m; sourceTree = "<group>"; };
 		49EBBB561C410CDE00576D7F /* CellOfHeed.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellOfHeed.xib; sourceTree = "<group>"; };
+		49F1426F1C4528AF009D9727 /* DataBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseHandler.h; sourceTree = "<group>"; };
+		49F142701C4528AF009D9727 /* DataBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseHandler.m; sourceTree = "<group>"; };
+		49F142731C4529D7009D9727 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F142741C4529D7009D9727 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +209,7 @@
 		49E049F01C3E6484009A0DE1 = {
 			isa = PBXGroup;
 			children = (
+				49F142731C4529D7009D9727 /* libsqlite3.0.tbd */,
 				49E049FB1C3E6484009A0DE1 /* UI19_homework_afn_sdimg */,
 				49E04A151C3E6484009A0DE1 /* UI19_homework_afn_sdimgTests */,
 				49E04A201C3E6484009A0DE1 /* UI19_homework_afn_sdimgUITests */,
@@ -225,6 +232,7 @@
 			children = (
 				49E04A511C3E996E009A0DE1 /* SDWebImage */,
 				49E04A951C3EADB5009A0DE1 /* img */,
+				49F142721C4528C2009D9727 /* DB */,
 				49E04A4B1C3E7D40009A0DE1 /* cell */,
 				49E04A2F1C3E66CA009A0DE1 /* AFNetworking */,
 				49E049FF1C3E6484009A0DE1 /* AppDelegate.h */,
@@ -389,6 +397,15 @@
 			name = head;
 			sourceTree = "<group>";
 		};
+		49F142721C4528C2009D9727 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				49F1426F1C4528AF009D9727 /* DataBaseHandler.h */,
+				49F142701C4528AF009D9727 /* DataBaseHandler.m */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -542,6 +559,7 @@
 				49E04A011C3E6484009A0DE1 /* AppDelegate.m in Sources */,
 				49E04A7C1C3E996E009A0DE1 /* UIButton+WebCache.m in Sources */,
 				49E04A791C3E996E009A0DE1 /* SDWebImageDownloaderOperation.m in Sources */,
+				49F142711C4528AF009D9727 /* DataBaseHandler.m in Sources */,
 				49E04A731C3E996E009A0DE1 /* MKAnnotationView+WebCache.m in Sources */,
 				49E04A761C3E996E009A0DE1 /* SDWebImageCompat.m in Sources */,
 				49E04A3E1C3E66CA009A0DE1 /* AFNetworkReachabilityManager.m in Sources */,

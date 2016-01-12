@@ -82,18 +82,14 @@ sqlite3 *db;
 }
 #pragma mark - 知识点6 删除数据
 - (void)deleteWithNumber:(NSInteger)number {
-
     //API
     NSString *deleteSQL = [NSString stringWithFormat:@"DELETE FROM lanou1130 WHERE number = '%ld'",number];
     int result = sqlite3_exec(db, deleteSQL.UTF8String, nil, nil, nil);
     if (result == SQLITE_OK) {
         NSLog(@"删除成功");
     } else {
-    
         NSLog(@"删除失败");
     }
-
-
 }
 #pragma mark - 知识点7 查询数据
 - (NSArray *)selectForAge:(int)age {

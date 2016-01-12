@@ -9,21 +9,15 @@
 #import "Second.h"
 #import "AFNetworking/AFURLSessionManager.h"
 #import "Model.h"
+#import "DataBaseHandler.h"
 @interface Second () <UIWebViewDelegate>
-
 @property (nonatomic, retain) UIWebView *protWebView;
 @property (nonatomic, retain) NSMutableArray *arrData;
-
 @property (nonatomic, assign) BOOL btnIs;
 @end
-
 @implementation Second
-
-
 - (void)viewWillAppear:(BOOL)animated {
-
     [self buttonIs];
-   
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,9 +25,7 @@
     [self.view addSubview:self.protWebView];
     NSURL *url = [[NSURL alloc] initWithString:self.url];
       [self.protWebView loadRequest:[NSURLRequest requestWithURL:url]];
-    
 }
-
 - (void)handleAction:(UIBarButtonItem *)barbutton {
     NSString *file = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"arrData.plist"];
     self.arrData = [NSMutableArray arrayWithContentsOfFile:file];
@@ -43,26 +35,28 @@
     mod.digest = self.digest;
     mod.imgsrc = self.imgsrc;
     mod.url = self.url;
-    
     //创建归档时所需的Data对象
-    
     NSMutableData *data = [NSMutableData data];
-    
     //归档类
     NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
     //开始归档
     [archiver encodeObject:mod forKey:@"model"];
     //归档结束
     [archiver finishEncoding];
-    
     //把model存入数组中
     [self.arrData addObject:data];
     [self.arrData writeToFile:file atomically:YES];
     UIBarButtonItem *itemDEL = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(DelAction:)];
     self.navigationItem.rightBarButtonItem = itemDEL;
+    
+    [self sqlMark:mod];
+    
 }
-
 - (void)DelAction:(UIBarButtonItem *)btn {
+    
+    //数据库 移除
+    [self sqlDEL:self.title];
+    
     NSString *file = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"arrData.plist"];
     NSMutableArray *array  = [NSMutableArray arrayWithContentsOfFile:file];
     NSData *temp = [NSData data];
@@ -81,12 +75,9 @@
     [arrNew writeToFile:file atomically:YES];
     UIBarButtonItem *itemR = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"2"] style:UIBarButtonItemStylePlain target:self action:@selector(handleAction:)];
     self.navigationItem.rightBarButtonItem = itemR;
-    
-    
 }
 - (void)buttonIs {
-   
-    NSString *file = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"arrData.plist"];
+     NSString *file = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"arrData.plist"];
     NSMutableArray *array  = [NSMutableArray arrayWithContentsOfFile:file];
     self.btnIs = YES;
     for (NSData *data in array) {
@@ -111,6 +102,28 @@
 
 
 }
+
+
+#pragma mark - 数据库收藏 
+- (void)sqlMark:(Model *)mod {
+    DataBaseHandler *database = [DataBaseHandler shareDataBaseHandler];
+    [database insertMark:mod];
+
+}
+
+- (void)sqlDEL:(NSString *)title {
+    DataBaseHandler *database = [DataBaseHandler shareDataBaseHandler];
+    [database deleteWithTitle:title];
+
+}
+
+
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
