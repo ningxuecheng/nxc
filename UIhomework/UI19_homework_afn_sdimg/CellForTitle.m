@@ -1,21 +1,17 @@
 //
-//  CellOfHeed.m
+//  CellForTitle.m
 //  UI19_homework_afn_sdimg
 //
-//  Created by dllo on 16/1/9.
+//  Created by dllo on 16/1/14.
 //  Copyright © 2016年 dllo. All rights reserved.
 //
 
-#import "CellOfHeed.h"
+#import "CellForTitle.h"
 
-@implementation CellOfHeed
+@implementation CellForTitle
 
 - (void)awakeFromNib {
-    
-}
-
-- (void)passHeadArray:(NSArray *)arr {
-
+    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

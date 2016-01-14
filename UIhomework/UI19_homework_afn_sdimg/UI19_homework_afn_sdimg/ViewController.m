@@ -13,6 +13,7 @@
 #import "CellOfAdds.h"
 #import "Second.h"
 #import "CellOfHeed.h"
+#import "ModleTitle.h"
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, retain) UITableView *tableView;
 @property (nonatomic, retain) NSMutableArray *array;
@@ -49,13 +50,25 @@
         } else {
            
             NSArray *arrNews = [responseObject objectForKey:@"T1348647853363"];
+            NSDictionary *dicHead = [arrNews objectAtIndex:1];
+            NSArray *arrHead = [dicHead objectForKey:@"ads"];
+            
             self.array = [NSMutableArray array];
+            self.arrHead = [NSMutableArray array];
             for (NSDictionary *dic in arrNews) {
                 Model *mod = [[Model alloc] init];
                 [mod setValuesForKeysWithDictionary:dic];
                 [self.array addObject:mod];
             }
             [self.array removeObjectAtIndex:0];
+            
+            
+            for (NSDictionary *dicHead in arrHead) {
+                ModleTitle *model = [[ModleTitle alloc] init];
+                [model setValuesForKeysWithDictionary:dicHead];
+                [self.arrHead addObject:dicHead];
+            }
+            [self.array insertObject:self.arrHead atIndex:0];
             [self.tableView reloadData];
             
         }
@@ -88,15 +101,22 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Model *mod = self.array[indexPath.row];
-    if ([mod.digest isEqualToString:@""]) {
-        CellOfAdds *cell = [tableView dequeueReusableCellWithIdentifier:@"pool2"];
-        [cell passModle:mod];
+    if (indexPath.row == 0) {
+        CellOfHeed *cell = [tableView dequeueReusableCellWithIdentifier:@"head"];
+        [cell passHeadArray:self.arrHead];
         return cell;
-    }else {
-    CellOfNews *cell = [tableView dequeueReusableCellWithIdentifier:@"pool1"];
-         [cell passModel:mod];
-        return cell;
+        
+    }else{
+        Model *mod = self.array[indexPath.row];
+        if ([mod.digest isEqualToString:@""]) {
+            CellOfAdds *cell = [tableView dequeueReusableCellWithIdentifier:@"pool2"];
+            [cell passModle:mod];
+            return cell;
+        }else {
+            CellOfNews *cell = [tableView dequeueReusableCellWithIdentifier:@"pool1"];
+            [cell passModel:mod];
+            return cell;
+        }
     }
 }
 

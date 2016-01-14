@@ -62,14 +62,11 @@
 }
 
 - (void)createCollectionView {
-    
     UICollectionViewFlowLayout *flowlayout = [[UICollectionViewFlowLayout alloc] init];
-    
     flowlayout.itemSize = CGSizeMake(WIDTH, HEIGHT);
     flowlayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     flowlayout.minimumLineSpacing = 0;
-    
-    self.collect = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 50 + 2, WIDTH, HEIGHT) collectionViewLayout:flowlayout];
+     self.collect = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 50 + 2, WIDTH, HEIGHT) collectionViewLayout:flowlayout];
     self.collect.delegate = self;
     self.collect.dataSource = self;
     [self.view addSubview:self.collect];
@@ -83,8 +80,7 @@
     self.btnOfView = [UIButton buttonWithType:UIButtonTypeSystem];
     self.btnOfView.frame = CGRectMake(WIDTH - 40, 20, 40, 30);
     [self.view addSubview:self.btnOfView];
-    self.btnOfView.backgroundColor = [UIColor orangeColor];
-    [self.btnOfView setImage:[UIImage imageNamed:@"1.jpg"] forState:UIControlStateNormal];
+    [self.btnOfView setImage:[UIImage imageNamed:@"1"] forState:UIControlStateNormal];
     [self.btnOfView addTarget:self action:@selector(handleAction:) forControlEvents:UIControlEventTouchUpInside];
 
 }
@@ -92,13 +88,11 @@
 - (void)handleAction:(UIButton *)button {
     button.selected = !button.selected;
     if (button.selected) {
-        
         if (self.colView == nil) {
             //弹出一个collectionView
             UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
             layout.sectionInset = UIEdgeInsetsMake(20, 20, 20, 20);
             layout.itemSize = CGSizeMake(60, 40);
-            
             self.colView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 50, WIDTH, 0) collectionViewLayout:layout];
             [self.view addSubview:self.colView];
             self.colView.backgroundColor = [UIColor whiteColor];
@@ -106,10 +100,7 @@
             self.colView.dataSource = self;
             //regs
             [self addLongPress];
-
             [self.colView registerNib:[UINib nibWithNibName:@"CellForMenu"  bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"pool2"];
-            
-            
             //动画展开
         }
         [UIView animateWithDuration:0.5 animations:^{
@@ -122,16 +113,10 @@
         self.colView.frame = CGRectMake(0, 50, WIDTH, 0);
         button.transform = CGAffineTransformMakeRotation(0);
     }];
-    
-    
-    
-    
     }
 }
-
 #pragma mark - collect DataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-
     if (collectionView == self.collect) {
         return 5;
     }else {
@@ -152,14 +137,11 @@
     
 
 }
-
 #pragma mark - collect Delegate
-
 #pragma mark - 知识点1 KVO(键值观察者)
 /** 核心：观察者 观察 某一个对象的属性变化 */
 - (void)createKVOAction {
 //VC观察collection的contentOffset属性
-
     [self.collect addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:@"context"];
 
 }
@@ -168,9 +150,7 @@
     NSLog(@"%@",change);
     CGFloat x = [[change objectForKey:@"new"] CGPointValue].x;
     NSLog(@"%f",x);
-    
-    CGFloat redX = x / 5;
-    
+     CGFloat redX = x / 5;
     //修改redline位置
     self.viewRedLine.transform = CGAffineTransformMakeTranslation(redX, 0);
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491D075B1C47BD5200FCEBBF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 491D075A1C47BD5200FCEBBF /* 1.png */; };
 		49E85D411C4730BA00BA4FEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E85D401C4730BA00BA4FEF /* main.m */; };
 		49E85D441C4730BA00BA4FEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E85D431C4730BA00BA4FEF /* AppDelegate.m */; };
 		49E85D471C4730BA00BA4FEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E85D461C4730BA00BA4FEF /* ViewController.m */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		491D075A1C47BD5200FCEBBF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		49E85D3C1C4730BA00BA4FEF /* UI24_KVO_NSNotificationCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI24_KVO_NSNotificationCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E85D401C4730BA00BA4FEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49E85D421C4730BA00BA4FEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				49E85D421C4730BA00BA4FEF /* AppDelegate.h */,
 				49E85D841C479BA800BA4FEF /* iconfont-cha.png */,
 				49E85D431C4730BA00BA4FEF /* AppDelegate.m */,
+				491D075A1C47BD5200FCEBBF /* 1.png */,
 				49E85D7B1C478E3D00BA4FEF /* 1.jpg */,
 				49E85D451C4730BA00BA4FEF /* ViewController.h */,
 				49E85D461C4730BA00BA4FEF /* ViewController.m */,
@@ -292,6 +295,7 @@
 				49E85D4C1C4730BA00BA4FEF /* Assets.xcassets in Resources */,
 				49E85D811C4799D100BA4FEF /* CellForMenu.xib in Resources */,
 				49E85D7C1C478E3D00BA4FEF /* 1.jpg in Resources */,
+				491D075B1C47BD5200FCEBBF /* 1.png in Resources */,
 				49E85D851C479BA800BA4FEF /* iconfont-cha.png in Resources */,
 				49E85D4A1C4730BA00BA4FEF /* Main.storyboard in Resources */,
 			);

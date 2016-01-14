@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491D079F1C47C8E200FCEBBF /* CellForTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D079D1C47C8E200FCEBBF /* CellForTitle.m */; };
+		491D07A01C47C8E200FCEBBF /* CellForTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491D079E1C47C8E200FCEBBF /* CellForTitle.xib */; };
+		491D07A61C47CC0700FCEBBF /* ModleTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D07A51C47CC0700FCEBBF /* ModleTitle.m */; };
+		491D07A91C47D64900FCEBBF /* headScollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D07A81C47D64900FCEBBF /* headScollView.m */; };
 		49C3EAD91C3F3C3200470A21 /* CellOfAdds.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3EAD71C3F3C3200470A21 /* CellOfAdds.m */; };
 		49C3EADA1C3F3C3200470A21 /* CellOfAdds.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C3EAD81C3F3C3200470A21 /* CellOfAdds.xib */; };
 		49C3EB291C3FD38900470A21 /* Second.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3EB271C3FD38900470A21 /* Second.m */; };
@@ -77,6 +81,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		491D079C1C47C8E200FCEBBF /* CellForTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellForTitle.h; sourceTree = "<group>"; };
+		491D079D1C47C8E200FCEBBF /* CellForTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellForTitle.m; sourceTree = "<group>"; };
+		491D079E1C47C8E200FCEBBF /* CellForTitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellForTitle.xib; sourceTree = "<group>"; };
+		491D07A41C47CC0600FCEBBF /* ModleTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModleTitle.h; sourceTree = "<group>"; };
+		491D07A51C47CC0700FCEBBF /* ModleTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModleTitle.m; sourceTree = "<group>"; };
+		491D07A71C47D64900FCEBBF /* headScollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = headScollView.h; sourceTree = "<group>"; };
+		491D07A81C47D64900FCEBBF /* headScollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = headScollView.m; sourceTree = "<group>"; };
 		49C3EAD61C3F3C3200470A21 /* CellOfAdds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellOfAdds.h; sourceTree = "<group>"; };
 		49C3EAD71C3F3C3200470A21 /* CellOfAdds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellOfAdds.m; sourceTree = "<group>"; };
 		49C3EAD81C3F3C3200470A21 /* CellOfAdds.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellOfAdds.xib; sourceTree = "<group>"; };
@@ -195,6 +206,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		491D079B1C47C88300FCEBBF /* News */ = {
+			isa = PBXGroup;
+			children = (
+				49E04A461C3E7D38009A0DE1 /* CellOfNews.h */,
+				49E04A471C3E7D38009A0DE1 /* CellOfNews.m */,
+				49E04A481C3E7D38009A0DE1 /* CellOfNews.xib */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		491D07A11C47C8E900FCEBBF /* TItle */ = {
+			isa = PBXGroup;
+			children = (
+				491D079C1C47C8E200FCEBBF /* CellForTitle.h */,
+				491D079D1C47C8E200FCEBBF /* CellForTitle.m */,
+				491D079E1C47C8E200FCEBBF /* CellForTitle.xib */,
+			);
+			name = TItle;
+			sourceTree = "<group>";
+		};
+		491D07A21C47C90E00FCEBBF /* Marks */ = {
+			isa = PBXGroup;
+			children = (
+				49EBBB511C40EF5800576D7F /* MarkVC.h */,
+				49EBBB521C40EF5800576D7F /* MarkVC.m */,
+			);
+			name = Marks;
+			sourceTree = "<group>";
+		};
+		491D07A31C47C92400FCEBBF /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				49C3EB261C3FD38900470A21 /* Second.h */,
+				49C3EB281C3FD38900470A21 /* Second.xib */,
+				49C3EB271C3FD38900470A21 /* Second.m */,
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
 		49C3EADB1C3F3C4400470A21 /* adds */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,9 +350,8 @@
 			children = (
 				49E04A881C3EA437009A0DE1 /* NaviView.h */,
 				49E04A891C3EA437009A0DE1 /* NaviView.m */,
-				49E04A461C3E7D38009A0DE1 /* CellOfNews.h */,
-				49E04A471C3E7D38009A0DE1 /* CellOfNews.m */,
-				49E04A481C3E7D38009A0DE1 /* CellOfNews.xib */,
+				491D07A11C47C8E900FCEBBF /* TItle */,
+				491D079B1C47C88300FCEBBF /* News */,
 				49C3EADB1C3F3C4400470A21 /* adds */,
 			);
 			name = cell;
@@ -314,6 +363,8 @@
 			children = (
 				49E04A4C1C3E844A009A0DE1 /* Model.h */,
 				49E04A4D1C3E844A009A0DE1 /* Model.m */,
+				491D07A41C47CC0600FCEBBF /* ModleTitle.h */,
+				491D07A51C47CC0700FCEBBF /* ModleTitle.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -323,11 +374,8 @@
 			children = (
 				49E04A021C3E6484009A0DE1 /* ViewController.h */,
 				49E04A031C3E6484009A0DE1 /* ViewController.m */,
-				49C3EB261C3FD38900470A21 /* Second.h */,
-				49C3EB271C3FD38900470A21 /* Second.m */,
-				49EBBB511C40EF5800576D7F /* MarkVC.h */,
-				49EBBB521C40EF5800576D7F /* MarkVC.m */,
-				49C3EB281C3FD38900470A21 /* Second.xib */,
+				491D07A31C47C92400FCEBBF /* Web */,
+				491D07A21C47C90E00FCEBBF /* Marks */,
 			);
 			name = vc;
 			sourceTree = "<group>";
@@ -392,6 +440,8 @@
 			children = (
 				49EBBB541C410CDE00576D7F /* CellOfHeed.h */,
 				49EBBB551C410CDE00576D7F /* CellOfHeed.m */,
+				491D07A71C47D64900FCEBBF /* headScollView.h */,
+				491D07A81C47D64900FCEBBF /* headScollView.m */,
 				49EBBB561C410CDE00576D7F /* CellOfHeed.xib */,
 			);
 			name = head;
@@ -522,6 +572,7 @@
 				49EBBB581C410CDE00576D7F /* CellOfHeed.xib in Resources */,
 				49C3EB2C1C3FED9B00470A21 /* 2.png in Resources */,
 				49E04A911C3EA99B009A0DE1 /* iconfont-huati.png in Resources */,
+				491D07A01C47C8E200FCEBBF /* CellForTitle.xib in Resources */,
 				49C3EB2A1C3FD38900470A21 /* Second.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,7 +608,9 @@
 				49E04A041C3E6484009A0DE1 /* ViewController.m in Sources */,
 				49C3EAD91C3F3C3200470A21 /* CellOfAdds.m in Sources */,
 				49E04A011C3E6484009A0DE1 /* AppDelegate.m in Sources */,
+				491D079F1C47C8E200FCEBBF /* CellForTitle.m in Sources */,
 				49E04A7C1C3E996E009A0DE1 /* UIButton+WebCache.m in Sources */,
+				491D07A91C47D64900FCEBBF /* headScollView.m in Sources */,
 				49E04A791C3E996E009A0DE1 /* SDWebImageDownloaderOperation.m in Sources */,
 				49F142711C4528AF009D9727 /* DataBaseHandler.m in Sources */,
 				49E04A731C3E996E009A0DE1 /* MKAnnotationView+WebCache.m in Sources */,
@@ -579,6 +632,7 @@
 				49E04A7A1C3E996E009A0DE1 /* SDWebImageManager.m in Sources */,
 				49E04A411C3E66CA009A0DE1 /* AFURLResponseSerialization.m in Sources */,
 				49E04A3D1C3E66CA009A0DE1 /* AFHTTPSessionManager.m in Sources */,
+				491D07A61C47CC0700FCEBBF /* ModleTitle.m in Sources */,
 				49E04A751C3E996E009A0DE1 /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

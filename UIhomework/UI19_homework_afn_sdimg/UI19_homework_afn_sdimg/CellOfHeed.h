@@ -10,4 +10,7 @@
 
 @interface CellOfHeed : UITableViewCell
 
+
+- (void)passHeadArray:(NSArray *)arr;
+
 @end
