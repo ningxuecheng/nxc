@@ -15,6 +15,13 @@
 		49E85D4F1C4730BA00BA4FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E85D4D1C4730BA00BA4FEF /* LaunchScreen.storyboard */; };
 		49E85D5A1C4730BB00BA4FEF /* UI24_KVO_NSNotificationCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E85D591C4730BB00BA4FEF /* UI24_KVO_NSNotificationCenterTests.m */; };
 		49E85D651C4730BB00BA4FEF /* UI24_KVO_NSNotificationCenterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E85D641C4730BB00BA4FEF /* UI24_KVO_NSNotificationCenterUITests.m */; };
+		49E85D741C47484E00BA4FEF /* NOtification.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E85D731C47484E00BA4FEF /* NOtification.m */; };
+		49E85D771C47806000BA4FEF /* OneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E85D761C47806000BA4FEF /* OneVC.m */; };
+		49E85D7A1C47807B00BA4FEF /* TwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E85D791C47807B00BA4FEF /* TwoVC.m */; };
+		49E85D7C1C478E3D00BA4FEF /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49E85D7B1C478E3D00BA4FEF /* 1.jpg */; };
+		49E85D801C4799D100BA4FEF /* CellForMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E85D7E1C4799D100BA4FEF /* CellForMenu.m */; };
+		49E85D811C4799D100BA4FEF /* CellForMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E85D7F1C4799D100BA4FEF /* CellForMenu.xib */; };
+		49E85D851C479BA800BA4FEF /* iconfont-cha.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E85D841C479BA800BA4FEF /* iconfont-cha.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,17 @@
 		49E85D601C4730BB00BA4FEF /* UI24_KVO_NSNotificationCenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UI24_KVO_NSNotificationCenterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E85D641C4730BB00BA4FEF /* UI24_KVO_NSNotificationCenterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UI24_KVO_NSNotificationCenterUITests.m; sourceTree = "<group>"; };
 		49E85D661C4730BB00BA4FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E85D721C47484E00BA4FEF /* NOtification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NOtification.h; sourceTree = "<group>"; };
+		49E85D731C47484E00BA4FEF /* NOtification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NOtification.m; sourceTree = "<group>"; };
+		49E85D751C47806000BA4FEF /* OneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneVC.h; sourceTree = "<group>"; };
+		49E85D761C47806000BA4FEF /* OneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneVC.m; sourceTree = "<group>"; };
+		49E85D781C47807B00BA4FEF /* TwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVC.h; sourceTree = "<group>"; };
+		49E85D791C47807B00BA4FEF /* TwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVC.m; sourceTree = "<group>"; };
+		49E85D7B1C478E3D00BA4FEF /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		49E85D7D1C4799D100BA4FEF /* CellForMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellForMenu.h; sourceTree = "<group>"; };
+		49E85D7E1C4799D100BA4FEF /* CellForMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellForMenu.m; sourceTree = "<group>"; };
+		49E85D7F1C4799D100BA4FEF /* CellForMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellForMenu.xib; sourceTree = "<group>"; };
+		49E85D841C479BA800BA4FEF /* iconfont-cha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-cha.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +120,15 @@
 			isa = PBXGroup;
 			children = (
 				49E85D421C4730BA00BA4FEF /* AppDelegate.h */,
+				49E85D841C479BA800BA4FEF /* iconfont-cha.png */,
 				49E85D431C4730BA00BA4FEF /* AppDelegate.m */,
+				49E85D7B1C478E3D00BA4FEF /* 1.jpg */,
 				49E85D451C4730BA00BA4FEF /* ViewController.h */,
 				49E85D461C4730BA00BA4FEF /* ViewController.m */,
+				49E85D821C4799E800BA4FEF /* cell */,
+				49E85D831C4799F600BA4FEF /* VC */,
+				49E85D721C47484E00BA4FEF /* NOtification.h */,
+				49E85D731C47484E00BA4FEF /* NOtification.m */,
 				49E85D481C4730BA00BA4FEF /* Main.storyboard */,
 				49E85D4B1C4730BA00BA4FEF /* Assets.xcassets */,
 				49E85D4D1C4730BA00BA4FEF /* LaunchScreen.storyboard */,
@@ -138,6 +162,27 @@
 				49E85D661C4730BB00BA4FEF /* Info.plist */,
 			);
 			path = UI24_KVO_NSNotificationCenterUITests;
+			sourceTree = "<group>";
+		};
+		49E85D821C4799E800BA4FEF /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				49E85D7D1C4799D100BA4FEF /* CellForMenu.h */,
+				49E85D7E1C4799D100BA4FEF /* CellForMenu.m */,
+				49E85D7F1C4799D100BA4FEF /* CellForMenu.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		49E85D831C4799F600BA4FEF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				49E85D751C47806000BA4FEF /* OneVC.h */,
+				49E85D761C47806000BA4FEF /* OneVC.m */,
+				49E85D781C47807B00BA4FEF /* TwoVC.h */,
+				49E85D791C47807B00BA4FEF /* TwoVC.m */,
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +290,9 @@
 			files = (
 				49E85D4F1C4730BA00BA4FEF /* LaunchScreen.storyboard in Resources */,
 				49E85D4C1C4730BA00BA4FEF /* Assets.xcassets in Resources */,
+				49E85D811C4799D100BA4FEF /* CellForMenu.xib in Resources */,
+				49E85D7C1C478E3D00BA4FEF /* 1.jpg in Resources */,
+				49E85D851C479BA800BA4FEF /* iconfont-cha.png in Resources */,
 				49E85D4A1C4730BA00BA4FEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E85D741C47484E00BA4FEF /* NOtification.m in Sources */,
+				49E85D771C47806000BA4FEF /* OneVC.m in Sources */,
 				49E85D471C4730BA00BA4FEF /* ViewController.m in Sources */,
+				49E85D801C4799D100BA4FEF /* CellForMenu.m in Sources */,
+				49E85D7A1C47807B00BA4FEF /* TwoVC.m in Sources */,
 				49E85D441C4730BA00BA4FEF /* AppDelegate.m in Sources */,
 				49E85D411C4730BA00BA4FEF /* main.m in Sources */,
 			);
@@ -496,6 +548,7 @@
 				49E85D6B1C4730BB00BA4FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49E85D6C1C4730BB00BA4FEF /* Build configuration list for PBXNativeTarget "UI24_KVO_NSNotificationCenterTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +557,7 @@
 				49E85D6E1C4730BB00BA4FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49E85D6F1C4730BB00BA4FEF /* Build configuration list for PBXNativeTarget "UI24_KVO_NSNotificationCenterUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +566,7 @@
 				49E85D711C4730BB00BA4FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
