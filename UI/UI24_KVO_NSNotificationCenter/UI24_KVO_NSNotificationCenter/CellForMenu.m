@@ -33,11 +33,21 @@
     
     
 }
+- (IBAction)delButton:(UIButton *)sender {
+    NSLog(@"qweeeeee");
+    [self removeFromSuperview];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"remove" object:nil userInfo:@{@"index":self.label_name.text}];
+    
+}
 
 - (void)handleDel:(NSNotification *)not {
 
     //显示button
     self.btnForDel.hidden = NO;
+    
+    
+    
+    
 
 }
 

@@ -17,6 +17,8 @@
 @property (nonatomic, retain) UIButton *btnOfView;
 @property (nonatomic, retain) UIView *addview;
 @property (nonatomic, retain) UICollectionView *colView;
+@property (nonatomic, retain) NSMutableArray *array;
+@property (nonatomic, retain) UIButton *btnOfComplete;
 @end
 
 @implementation ViewController
@@ -27,6 +29,8 @@
     [self createCollectionView];
     [self createKVOAction];
     [self createButton];
+    [self handleData];
+    
 }
 #pragma mark - 长安手势
 - (void)addLongPress {
@@ -39,15 +43,51 @@
 - (void)handleLongPress:(UILongPressGestureRecognizer *)longPress {
     switch (longPress.state) {
         case UIGestureRecognizerStateBegan:
-            //通知中心
+        { //通知中心
             [[NSNotificationCenter defaultCenter] postNotificationName:@"DELETE" object:nil userInfo:nil];
-            
+           //根据手势在view上的点，找到对应item的indexpath
+            NSIndexPath *beginPath = [self.colView indexPathForItemAtPoint:[longPress locationInView:self.colView]];
+            //如果没有点钟item直接退出
+            if (beginPath == nil) {
+                return;
+            }
+            [self.colView beginInteractiveMovementForItemAtIndexPath:beginPath];
             
             break;
-            
+        }
+        case UIGestureRecognizerStateChanged:
+        {
+            [self.colView updateInteractiveMovementTargetPosition:[longPress locationInView:self.colView]];
+            break;
+        }
+        case UIGestureRecognizerStateEnded:
+        {
+            [self.colView endInteractiveMovement];
+            break;
+        }
         default:
             break;
     }
+
+
+}
+
+
+/** item 移动*/
+- (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return YES;
+}
+/** 移动item调用此方法*/
+- (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    //更新数据源
+    
+}
+
+
+#pragma mark - handleData
+- (void)handleData {
+    self.array = @[@1,@2,@3,@4,@5,@6,@7,@8,@9,@0].mutableCopy;
 
 
 }
@@ -86,6 +126,7 @@
 }
 
 - (void)handleAction:(UIButton *)button {
+    [self createKVOForColView];
     button.selected = !button.selected;
     if (button.selected) {
         if (self.colView == nil) {
@@ -120,7 +161,7 @@
     if (collectionView == self.collect) {
         return 5;
     }else {
-     return 10;
+     return self.array.count;
     }
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -138,6 +179,12 @@
 
 }
 #pragma mark - collect Delegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"%ld,%ld",indexPath.section,indexPath.item);
+    
+}
+
 #pragma mark - 知识点1 KVO(键值观察者)
 /** 核心：观察者 观察 某一个对象的属性变化 */
 - (void)createKVOAction {
@@ -147,13 +194,29 @@
 }
 /** 当着被观察者属性发生变化的时候，调用此方法 */
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
-    NSLog(@"%@",change);
-    CGFloat x = [[change objectForKey:@"new"] CGPointValue].x;
-    NSLog(@"%f",x);
-     CGFloat redX = x / 5;
-    //修改redline位置
-    self.viewRedLine.transform = CGAffineTransformMakeTranslation(redX, 0);
+    if ([keyPath isEqualToString:@"contentOffset"]) {
+        NSLog(@"%@",change);
+        CGFloat x = [[change objectForKey:@"new"] CGPointValue].x;
+        NSLog(@"%f",x);
+        CGFloat redX = x / 5;
+        //修改redline位置
+        self.viewRedLine.transform = CGAffineTransformMakeTranslation(redX, 0);
+    } else {
+        [self.array removeObjectAtIndex:0];
+        [self.colView reloadData];
+    }
 }
+
+- (void)createKVOForColView {
+   [[NSNotificationCenter defaultCenter] addObserverForName:@"remove" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+       [self.array removeObjectAtIndex:0];
+       [self.colView reloadData];
+}];
+    
+}
+
+
+
 
 #pragma mark - 知识点2 通知中心
 /** 详见另外两个VC */
