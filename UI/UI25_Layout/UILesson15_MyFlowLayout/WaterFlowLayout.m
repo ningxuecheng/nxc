@@ -131,7 +131,7 @@
     
     if (_delegate && [_delegate respondsToSelector:@selector(heightForItemIndexPath:)]) {
         // 使用代理方法获取item的高
-        itemHeight = [_delegate heightForItemIndexPath:indexPath];
+        itemHeight = [self.delegate heightForItemIndexPath:indexPath];
     }
     // 设置frame
     layoutArr.frame = CGRectMake(self.xForItemOrigin, self.yForItemOrigin, self.itemSize.width, itemHeight);
