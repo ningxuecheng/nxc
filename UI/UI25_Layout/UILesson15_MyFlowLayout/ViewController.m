@@ -36,11 +36,11 @@
     
     flowLayout.itemSize = CGSizeMake(w, w);
     
-    flowLayout.sectionInsets = UIEdgeInsetsMake(10, 10, 10, 10);
+  
     
     flowLayout.insertItemSpacing = 10;
     
-    flowLayout.numberOfColumns = 3;
+    
     
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:flowLayout];
