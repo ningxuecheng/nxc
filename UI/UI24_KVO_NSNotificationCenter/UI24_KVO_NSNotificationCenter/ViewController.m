@@ -71,8 +71,6 @@
 
 
 }
-
-
 /** item 移动*/
 - (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -83,15 +81,12 @@
     //更新数据源
     
 }
-
-
 #pragma mark - handleData
 - (void)handleData {
     self.array = @[@1,@2,@3,@4,@5,@6,@7,@8,@9,@0].mutableCopy;
 
 
 }
-
 #pragma mark - collectionView
 
 - (void)createRedLine {
@@ -134,7 +129,7 @@
             UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
             layout.sectionInset = UIEdgeInsetsMake(20, 20, 20, 20);
             layout.itemSize = CGSizeMake(60, 40);
-            self.colView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 50, WIDTH, 0) collectionViewLayout:layout];
+            self.colView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 50, WIDTH, HEIGHT) collectionViewLayout:layout];
             [self.view addSubview:self.colView];
             self.colView.backgroundColor = [UIColor whiteColor];
             self.colView.delegate =self;

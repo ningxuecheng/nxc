@@ -25,7 +25,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JV8-Uo-iaq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-644.5" y="-83.5"/>
+            <point key="canvasLocation" x="-1336.5" y="-969.5"/>
         </scene>
         <!--通知界面传值-->
         <scene sceneID="Soh-W8-RzF">
@@ -44,7 +44,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEF-8S-C39" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1210.5" y="-734.5"/>
+            <point key="canvasLocation" x="-992.5" y="-1030.5"/>
         </scene>
         <!--第二页-->
         <scene sceneID="POc-1r-JGg">
@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVj-b0-XIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-756.5" y="-594.5"/>
+            <point key="canvasLocation" x="-468.5" y="-412.5"/>
         </scene>
         <!--第一页-->
         <scene sceneID="L37-ST-gcX">
@@ -124,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udq-BV-Sol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-468.5" y="-823.5"/>
+            <point key="canvasLocation" x="-478.5" y="-885.5"/>
         </scene>
         <!--KVO-->
         <scene sceneID="tne-QT-ifu">
@@ -145,11 +145,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1051.5" y="203.5"/>
+            <point key="canvasLocation" x="-1293.5" y="45.5"/>
         </scene>
         <!--通知中心-->
         <scene sceneID="jUs-sY-L8q">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVu-LA-WoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="65C-4C-qTI" customClass="NOtification" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fLh-KE-ILh"/>
@@ -212,7 +213,6 @@
                         <outlet property="text_Message" destination="cj6-PW-qzc" id="vR4-wv-eSZ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nVu-LA-WoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-768.5" y="344.5"/>
         </scene>

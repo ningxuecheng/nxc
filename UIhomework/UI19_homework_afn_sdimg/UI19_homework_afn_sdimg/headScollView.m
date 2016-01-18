@@ -21,7 +21,9 @@
 - (instancetype)initWithFrame:(CGRect)frame arr:(NSArray *)arr {
     self = [super initWithFrame:frame];
     if (self) {
-        
+        self.array = [NSArray array];
+        [self createScroll:frame];
+        [self createImageView:frame];
     }
 
     return self;
@@ -38,7 +40,12 @@
         NSURL *url = [NSURL URLWithString:mod.imgsrc];
         [imgView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"1.jpg"] options:SDWebImageProgressiveDownload];
         imgView.frame = CGRectMake(5, 50, frame.size.width, frame.size.height - 50);
+        [backView addSubview:imgView];
         
+        UILabel *label_title = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, frame.size.width, 40)];
+        label_title.text = mod.title;
+        [backView addSubview:label_title];
+        [self.scroll addSubview:backView];
     }
   
 
@@ -48,7 +55,7 @@
 
 
 }
-- (void)ceateScroll:(CGRect)frame {
+- (void)createScroll:(CGRect)frame {
     self.scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
     [self addSubview:self.scroll];
     

@@ -90,7 +90,7 @@
     
     [self.tableView registerNib:[UINib nibWithNibName:@"CellOfAdds" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"pool2"];
     
-    [self.tableView registerClass:[CellOfHeed class] forCellReuseIdentifier:@"head"];
+//    [self.tableView registerClass:[CellOfHeed class] forCellReuseIdentifier:@"head"];
 
 }
 
@@ -101,22 +101,22 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        CellOfHeed *cell = [tableView dequeueReusableCellWithIdentifier:@"head"];
-        [cell passHeadArray:self.arrHead];
-        return cell;
+    if (indexPath.row == 7987987980) {
+//        CellOfHeed *cell = [tableView dequeueReusableCellWithIdentifier:@"head"];
+//        [cell passHeadArray:self.arrHead];
+//        return cell;
         
     }else{
-        Model *mod = self.array[indexPath.row];
-        if ([mod.digest isEqualToString:@""]) {
-            CellOfAdds *cell = [tableView dequeueReusableCellWithIdentifier:@"pool2"];
-            [cell passModle:mod];
-            return cell;
-        }else {
-            CellOfNews *cell = [tableView dequeueReusableCellWithIdentifier:@"pool1"];
-            [cell passModel:mod];
-            return cell;
-        }
+    }
+    Model *mod = self.array[indexPath.row];
+    if ([mod.digest isEqualToString:@""]) {
+        CellOfAdds *cell = [tableView dequeueReusableCellWithIdentifier:@"pool2"];
+        [cell passModle:mod];
+        return cell;
+    }else {
+        CellOfNews *cell = [tableView dequeueReusableCellWithIdentifier:@"pool1"];
+        [cell passModel:mod];
+        return cell;
     }
 }
 
