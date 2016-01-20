@@ -30,8 +30,8 @@
                         <color key="textColor" red="0.58362737816271226" green="0.62401432408944302" blue="0.85322044683846143" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GgD-Ay-aqw">
-                        <rect key="frame" x="13" y="13" width="148" height="118"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GgD-Ay-aqw">
+                        <rect key="frame" x="45" y="12" width="148" height="118"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="GgD-Ay-aqw" secondAttribute="height" multiplier="5:4" id="75M-Qd-zTN"/>
