@@ -23,21 +23,15 @@
 }
 
 - (void)tableViewcreate {
-
     self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"pool"];
-
     [self.view addSubview:self.tableView];
-
-
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-
     return self.array.count;
 }
 

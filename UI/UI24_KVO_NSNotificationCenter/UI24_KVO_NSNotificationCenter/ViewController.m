@@ -86,6 +86,7 @@
     self.array = @[@1,@2,@3,@4,@5,@6,@7,@8,@9,@0].mutableCopy;
 
 
+
 }
 #pragma mark - collectionView
 
@@ -105,7 +106,7 @@
     self.collect.delegate = self;
     self.collect.dataSource = self;
     [self.view addSubview:self.collect];
-    self.collect.pagingEnabled = YES;
+    self.collect.pagingEnabled = NO;
     [self.collect registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"pool1"];
    
    

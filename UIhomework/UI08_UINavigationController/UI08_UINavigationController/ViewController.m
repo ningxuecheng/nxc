@@ -41,10 +41,10 @@
     self.navigationController.navigationBarHidden = NO;
 
 /** 导航栏样式 **/
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    //self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     
     /** 导航栏背景颜色*/
-    self.navigationController.navigationBar.backgroundColor = [UIColor blackColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor blueColor];
     
     /** 导航栏上面item的颜色 */
     self.navigationController.navigationBar.tintColor = [UIColor redColor];

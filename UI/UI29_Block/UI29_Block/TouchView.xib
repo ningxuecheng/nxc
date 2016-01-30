@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TouchView">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="vwW-BF-roc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="523" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是自定义View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ1-cf-3TH">
+                    <rect key="frame" x="201" y="105" width="122" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exO-bm-ors">
+                    <rect key="frame" x="473" y="0.0" width="50" height="230"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="rUx-bz-Gyu"/>
+                    </constraints>
+                    <state key="normal" title="删除"/>
+                    <connections>
+                        <action selector="handleButtonAction:" destination="-1" eventType="touchUpInside" id="aKX-jE-9zS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIg-hD-j6b">
+                    <rect key="frame" x="423" y="0.0" width="50" height="230"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="编辑"/>
+                    <connections>
+                        <action selector="editBtnHandle:" destination="-1" eventType="touchUpInside" id="9uZ-dN-7MQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="FJ1-cf-3TH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="O4J-iq-gkN"/>
+                <constraint firstAttribute="trailing" secondItem="exO-bm-ors" secondAttribute="trailing" id="VU7-Gz-W0D"/>
+                <constraint firstItem="HIg-hD-j6b" firstAttribute="width" secondItem="exO-bm-ors" secondAttribute="width" id="Wpm-Td-0P1"/>
+                <constraint firstItem="HIg-hD-j6b" firstAttribute="height" secondItem="exO-bm-ors" secondAttribute="height" id="YeV-g3-5fM"/>
+                <constraint firstAttribute="bottom" secondItem="exO-bm-ors" secondAttribute="bottom" id="dnF-vo-nLM"/>
+                <constraint firstItem="exO-bm-ors" firstAttribute="leading" secondItem="HIg-hD-j6b" secondAttribute="trailing" id="eMR-gi-nkN"/>
+                <constraint firstItem="exO-bm-ors" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gUG-bS-lBk"/>
+                <constraint firstItem="FJ1-cf-3TH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lc4-A4-vx3"/>
+                <constraint firstItem="HIg-hD-j6b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="w92-N5-lfK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="314.5" y="316"/>
+        </view>
+    </objects>
+</document>

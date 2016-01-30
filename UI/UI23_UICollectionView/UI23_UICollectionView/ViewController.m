@@ -41,7 +41,7 @@
     self.flowLayout.sectionInset = UIEdgeInsetsMake(20, 20, 20, 20);
     
     //设置分区的头部和尾部的视图大小
-    self.flowLayout.headerReferenceSize = CGSizeMake(50, 100);
+    self.flowLayout.headerReferenceSize = CGSizeMake(10, 50);
     //设置分区的尾部大小
     self.flowLayout.footerReferenceSize = CGSizeMake(50, 100);
 

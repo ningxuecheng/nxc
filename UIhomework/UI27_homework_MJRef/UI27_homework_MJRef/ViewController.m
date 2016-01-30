@@ -12,17 +12,31 @@
 #import "CellOfNews.h"
 #import <MJRefresh/MJRefresh.h>
 #import "WebVC.h"
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+#import "ModleTitle.h"
+#import "CollCell.h"
+#define WIDTH self.view.frame.size.width
+#define HEIGHT self.view.frame.size.height
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate>
 @property (nonatomic, retain) UITableView *tableView;
 @property (nonatomic, retain) NSMutableArray *array;
+@property (nonatomic, retain) NSMutableArray *arrHeader;
+
+@property (nonatomic, retain) UICollectionView *collect;
+@property (nonatomic, retain) UIScrollView *scroll;
+
+@property (nonatomic, retain) NSTimer *timer;
 
 @end
 
 @implementation ViewController
 
 - (void)dealloc {
+    [_arrHeader release];
     [_tableView release];
     [_array release];
+    [_scroll release];
+    [_timer release];
+    [_collect release];
     [super dealloc];
 
 }
@@ -31,7 +45,7 @@
    
 
     [super viewDidLoad];
-   
+   self.edgesForExtendedLayout = UIRectEdgeNone;
     [self createTableView];
     
 }
@@ -52,13 +66,27 @@
             self.array = [NSMutableArray array];
             
             for (NSDictionary *dic in arrNews) {
-               
                 Model *model = [[Model alloc] init];
                 [model setValuesForKeysWithDictionary:dic];
                 [self.array addObject:model];
                 [model release];
-               
             }
+            //把数组中的第一个移除（作为轮播图）
+            [self.array removeObjectAtIndex:0];
+            
+            self.arrHeader = [NSMutableArray array];
+            NSDictionary *dicHead = [arrNews objectAtIndex:0];
+            NSArray *arrHead = [dicHead objectForKey:@"ads"];
+            
+            for (NSDictionary *dic in arrHead) {
+                ModleTitle *title = [[ModleTitle alloc] init];
+                [title setValuesForKeysWithDictionary:dic];
+                [self.arrHeader addObject:title];
+                [title release];
+            }
+            
+            [self createHeaderView];
+          
             [self.tableView reloadData];
             // 隐藏当前的上拉刷新控件
             [self.tableView.mj_header endRefreshing];
@@ -78,12 +106,7 @@
     [self.view addSubview:self.tableView];
     [self.tableView registerNib:[UINib nibWithNibName:@"CellOfNews" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"poolCell"];
     
-    [self.tableView headerViewForSection:1];
-    UIImageView *v_headerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 23)];//创建一个UIimageView（v_headerImageView）
-    v_headerImageView.backgroundColor = [UIColor redColor];
-    
-    
-    self.tableView.tableHeaderView = v_headerImageView;
+   
     
     
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -99,11 +122,49 @@
     [_tableView release];
 }
 
-#pragma mark - 代理
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    return 2;
+/** 轮播图 */
+- (void)createHeaderView {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 180)];
+    
+    /** 红线*/
+    UIView *viewLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0,self.view.frame.size.width/5, 2)];
+    viewLine.backgroundColor = [UIColor redColor];
+    [view addSubview:viewLine];
+    [viewLine release];
+    
+    /** uicollection轮播图 */
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    flowLayout.itemSize = CGSizeMake(WIDTH, 173);
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    flowLayout.minimumLineSpacing = 0;
+    flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.collect = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 5, WIDTH, 173) collectionViewLayout:flowLayout];
+    
+    self.collect.delegate = self;
+    self.collect.dataSource = self;
+    [view addSubview:self.collect];
+    self.collect.pagingEnabled = YES;
+    [self.collect registerNib:[UINib nibWithNibName:@"CollCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"collCell"];
+    self.collect.backgroundColor = [UIColor whiteColor];
+    
+    view.backgroundColor = [UIColor whiteColor];
+    self.tableView.tableHeaderView = view;
+    [flowLayout release];
+    [view release];
+    [self.collect release];
+    
 }
+
+
+
+- (void)addTimer{
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
+     }
+
+
+
+#pragma mark - tableView 代理
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -139,7 +200,6 @@
     WebVC *vc = [[WebVC alloc] init];
     [vc passModel:model];
     
-    
     [UIView  beginAnimations:nil context:NULL];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationDuration:0.75];
@@ -149,6 +209,20 @@
     [vc release];
     
 
+}
+
+#pragma mark - collView 代理
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+
+    return 5;
+}
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CollCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collCell" forIndexPath:indexPath];
+    ModleTitle *model = [self.arrHeader objectAtIndex:indexPath.item];
+    [cell passModel:model];
+    
+    
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

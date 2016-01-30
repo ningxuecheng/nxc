@@ -50,7 +50,7 @@
         } else {
            
             NSArray *arrNews = [responseObject objectForKey:@"T1348647853363"];
-            NSDictionary *dicHead = [arrNews objectAtIndex:1];
+            NSDictionary *dicHead = [arrNews objectAtIndex:0];
             NSArray *arrHead = [dicHead objectForKey:@"ads"];
             
             self.array = [NSMutableArray array];

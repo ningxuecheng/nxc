@@ -10,7 +10,11 @@
 		345DED6C523CC01FD512506F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFEA26019FDD0643FC5451C /* libPods.a */; };
 		497572BB1C4E569D00D5F500 /* CellOfNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 497572B91C4E569D00D5F500 /* CellOfNews.m */; };
 		497572BC1C4E569D00D5F500 /* CellOfNews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497572BA1C4E569D00D5F500 /* CellOfNews.xib */; };
+		497D97B31C4FBCF50010323D /* ModleTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 497D97B21C4FBCF50010323D /* ModleTitle.m */; };
+		497D97B71C4FC3C00010323D /* CollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 497D97B51C4FC3C00010323D /* CollCell.m */; };
+		497D97B81C4FC3C00010323D /* CollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497D97B61C4FC3C00010323D /* CollCell.xib */; };
 		49883EAD1C4E3DF3003EBDF9 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 49883EAC1C4E3DF3003EBDF9 /* Model.m */; };
+		49D087541C510B3F00B9BFC2 /* CellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D087531C510B3F00B9BFC2 /* CellView.m */; };
 		49D6D6B71C4F0F2400B46534 /* WebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D6D6B61C4F0F2400B46534 /* WebVC.m */; };
 		49E109231C4E337900744305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E109221C4E337900744305 /* main.m */; };
 		49E109261C4E337900744305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E109251C4E337900744305 /* AppDelegate.m */; };
@@ -44,8 +48,15 @@
 		497572B81C4E569D00D5F500 /* CellOfNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellOfNews.h; sourceTree = "<group>"; };
 		497572B91C4E569D00D5F500 /* CellOfNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellOfNews.m; sourceTree = "<group>"; };
 		497572BA1C4E569D00D5F500 /* CellOfNews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellOfNews.xib; sourceTree = "<group>"; };
+		497D97B11C4FBCF50010323D /* ModleTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModleTitle.h; sourceTree = "<group>"; };
+		497D97B21C4FBCF50010323D /* ModleTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModleTitle.m; sourceTree = "<group>"; };
+		497D97B41C4FC3C00010323D /* CollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollCell.h; sourceTree = "<group>"; };
+		497D97B51C4FC3C00010323D /* CollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollCell.m; sourceTree = "<group>"; };
+		497D97B61C4FC3C00010323D /* CollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollCell.xib; sourceTree = "<group>"; };
 		49883EAB1C4E3DF3003EBDF9 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		49883EAC1C4E3DF3003EBDF9 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		49D087521C510B3F00B9BFC2 /* CellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellView.h; sourceTree = "<group>"; };
+		49D087531C510B3F00B9BFC2 /* CellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellView.m; sourceTree = "<group>"; };
 		49D6D6B51C4F0F2400B46534 /* WebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebVC.h; sourceTree = "<group>"; };
 		49D6D6B61C4F0F2400B46534 /* WebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebVC.m; sourceTree = "<group>"; };
 		49E1091E1C4E337900744305 /* UI27_homework_MJRef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI27_homework_MJRef.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,20 +108,43 @@
 		497572B71C4E51A300D5F500 /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				497572B81C4E569D00D5F500 /* CellOfNews.h */,
-				497572B91C4E569D00D5F500 /* CellOfNews.m */,
-				497572BA1C4E569D00D5F500 /* CellOfNews.xib */,
+				49D087551C510B6100B9BFC2 /* news */,
+				49D087521C510B3F00B9BFC2 /* CellView.h */,
+				49D087531C510B3F00B9BFC2 /* CellView.m */,
+				497D97B91C4FC3CA0010323D /* collCell */,
 			);
 			name = cell;
+			sourceTree = "<group>";
+		};
+		497D97B91C4FC3CA0010323D /* collCell */ = {
+			isa = PBXGroup;
+			children = (
+				497D97B41C4FC3C00010323D /* CollCell.h */,
+				497D97B51C4FC3C00010323D /* CollCell.m */,
+				497D97B61C4FC3C00010323D /* CollCell.xib */,
+			);
+			name = collCell;
 			sourceTree = "<group>";
 		};
 		49883EAE1C4E3E09003EBDF9 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				497D97B11C4FBCF50010323D /* ModleTitle.h */,
+				497D97B21C4FBCF50010323D /* ModleTitle.m */,
 				49883EAB1C4E3DF3003EBDF9 /* Model.h */,
 				49883EAC1C4E3DF3003EBDF9 /* Model.m */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		49D087551C510B6100B9BFC2 /* news */ = {
+			isa = PBXGroup;
+			children = (
+				497572B81C4E569D00D5F500 /* CellOfNews.h */,
+				497572B91C4E569D00D5F500 /* CellOfNews.m */,
+				497572BA1C4E569D00D5F500 /* CellOfNews.xib */,
+			);
+			name = news;
 			sourceTree = "<group>";
 		};
 		49E109151C4E337900744305 = {
@@ -308,6 +342,7 @@
 				497572BC1C4E569D00D5F500 /* CellOfNews.xib in Resources */,
 				49E1092E1C4E337900744305 /* Assets.xcassets in Resources */,
 				49E1092C1C4E337900744305 /* Main.storyboard in Resources */,
+				497D97B81C4FC3C00010323D /* CollCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,11 +416,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				49E109291C4E337900744305 /* ViewController.m in Sources */,
+				49D087541C510B3F00B9BFC2 /* CellView.m in Sources */,
+				497D97B31C4FBCF50010323D /* ModleTitle.m in Sources */,
 				497572BB1C4E569D00D5F500 /* CellOfNews.m in Sources */,
 				49E109261C4E337900744305 /* AppDelegate.m in Sources */,
 				49D6D6B71C4F0F2400B46534 /* WebVC.m in Sources */,
 				49E109231C4E337900744305 /* main.m in Sources */,
 				49883EAD1C4E3DF3003EBDF9 /* Model.m in Sources */,
+				497D97B71C4FC3C00010323D /* CollCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

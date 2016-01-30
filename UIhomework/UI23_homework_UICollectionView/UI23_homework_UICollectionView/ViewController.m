@@ -58,6 +58,7 @@
 #pragma mark - 创建 UICollectionViewFlowLayout
 - (void)createFlowLayout {
     self.flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    self.flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.flowLayout.itemSize = CGSizeMake((self.view.frame.size.width - 80)/3, (self.view.frame.size.width - 80)/3.0 *1.818);
     self.flowLayout.minimumInteritemSpacing = 20;
     self.flowLayout.minimumLineSpacing = 20;
